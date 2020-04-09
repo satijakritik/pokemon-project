@@ -1,2 +1,2 @@
 # pokemon-project
-Create a Pokémon game as group project for ENGG1340
+# Text based Pokémon game as group project for ENGG1340
