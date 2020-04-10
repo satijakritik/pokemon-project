@@ -1,6 +1,7 @@
 ## Group Members
   
  1. Name: Shriya Bedi, UID: 3035663502
+    About me: I am a positive and spirited person, and I enjoy taking on challenges. I am curious by nature and am always eager to learn new skills. I am fond of reading and music, and aspire to publish a novel someday.
  2. Name: Kritik Satija, UID: 3035666645
 
 ## Game description
