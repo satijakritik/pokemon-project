@@ -13,4 +13,4 @@ Enter the features here
 
 ## Flow of the Game
 
-![First Draft of gameflow](https://raw.githubusercontent.com/satijakritik/images/master/pokemon_flowchart_first_draft.jpeg?token=ANKJCUY6HACK3WBTJLSE2FK6TFFBK)
+![Second Draft of gameflow](https://raw.githubusercontent.com/satijakritik/images/master/pokémon_second_draft_flowchart.png?token=ANKJCU6T3YFFLYFM5C6HK2C6TGJX6)
