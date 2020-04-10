@@ -10,7 +10,7 @@
 
 ## Game description
 
-It is a two player game based on the popular Pokemon videogame, where each player is randomly assigned n numbner of Pokemons from a pre existing database, and then they carry out attacks on each other, aiming to lower the health of the other player so that it can ultimately reach zero and the Pokemon being used is destroyed. In this &nbsp;&nbsp;case, if the player has any more Pokemons left, they can be used until their health also depletes to zero. The monsters start with &nbsp;&nbsp;a maximum amount of health, and the first player to exhaust all Pokemons loses the game.
+Pokémon Challenges is a two player turn based game inspired by the popular Pokémon videogames. In this game, each player is randomly assigned a pre-decided number of pokémons from an existing database. They carry out attacks on each other, aiming to lower the health of the other pokémon to zero. When its health reaches zero, the pokémon faints. If the player has any more pokémons left, they can be used until their health also depletes to zero. The first player to exhaust all pokémons loses the game.
 
 ## Features/ functions to be implemented
 
