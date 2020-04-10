@@ -1,8 +1,12 @@
+# <h1 align = "center"> Pokémon Challenges </h1>
 ## Group Members
   
- 1. Name: Shriya Bedi, UID: 3035663502
+ 1. **Name: Shriya Bedi, UID: 3035663502** <br>
     About me: I am a positive and spirited person, and I enjoy taking on challenges. I am curious by nature and am always eager to learn new skills. I am fond of reading and music, and aspire to publish a novel someday.
- 2. Name: Kritik Satija, UID: 3035666645
+ 2. **Name: Kritik Satija, UID: 3035666645** <br>
+    About me: I am a hardworking and diligent person. I enjoy working on different projects in teams. I get along well with all kinds of people. Apart from that, I enjoy playing sports such as table tennis and chess.
+    
+    **Group: 113**
 
 ## Game description
 
@@ -40,3 +44,6 @@ Apart from these, the code will also include the use of classes. Every pokémon 
 ## Flow of the Game
 
 ![Second Draft of gameflow](https://raw.githubusercontent.com/satijakritik/images/master/pokémon_second_draft_flowchart.png?token=ANKJCU6T3YFFLYFM5C6HK2C6TGJX6)
+<br>
+<br>
+This flowchart covers the different scenarios that may arise during gameplay. It is subject to change during the development of the game.
