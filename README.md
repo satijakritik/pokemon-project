@@ -6,7 +6,7 @@
 
 ## Game description
 
-It is a two player game based on the concept used in Pokemon, where each player is randomly assigned n numbner of Pokemons from a pre existing database, and then they carry out attacks on each other, aiming to lower the health of the other player so that it can ultimately reach zero and the pokemon is destroyed. In this &nbsp;&nbsp;case, if the player has any more monsters left, they can be used until their health also depletes. The monsters start with &nbsp;&nbsp;a maximum amount of health, and the first player to exhaust all monsters loses the game.
+It is a two player game based on the popular Pokemon videogame, where each player is randomly assigned n numbner of Pokemons from a pre existing database, and then they carry out attacks on each other, aiming to lower the health of the other player so that it can ultimately reach zero and the Pokemon being used is destroyed. In this &nbsp;&nbsp;case, if the player has any more Pokemons left, they can be used until their health also depletes to zero. The monsters start with &nbsp;&nbsp;a maximum amount of health, and the first player to exhaust all Pokemons loses the game.
 
 ## Features/ functions to be implemented
 
