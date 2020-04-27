@@ -2,7 +2,7 @@
 // includes class
 
 #include <iostream>
-#include “main.h”     //to be explained created later, for main compilation
+#include “main.h”     //to be created later, for main compilation
 
 using namespace std;
 class Monster
