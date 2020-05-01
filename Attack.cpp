@@ -4,11 +4,11 @@
 #include "Monster.h"
 #include "Player.h"
 
-void Attack::attackChoice(Player &C)
+void Player::attackChoice(Player &C)
 {
 	
 	C.display();
-  int choice;
+    int choice;
 	cout << "Which type of attack? (1/2)" << endl;
 	cin >> choice;
 	switch (choice)

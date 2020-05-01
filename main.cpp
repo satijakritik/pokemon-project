@@ -1,6 +1,6 @@
 // main file to compile the rest of the code
 
-#include <iostream.h>
+#include <iostream>
 #include "Monster.h"
 #include "Player.h"
 #include "Attack.h"

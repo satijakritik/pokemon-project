@@ -1,6 +1,7 @@
 // file containg main monster.cpp function
 
 #include "Monster.h"
+#include "Player.h"
 
 void Monster::attack(Player &target)
 {
@@ -11,7 +12,7 @@ void Monster::attack(Player &target)
 	cout<<name<<" health: "<<health<<endl; // displays monster name and remaining health
 }
 
-Monster::Monster(int newhealth, int newdamage) 
+Monster::Monster(string newName, int newhealth, int newdamage) 
 {
 	health = newhealth;
 	damage = newdamage;

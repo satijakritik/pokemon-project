@@ -1,6 +1,7 @@
 // header file for player
 
-#define Character_h
+#ifndef PLAYER_H
+#define PLAYER_H
 
 #include "Monster.h" 
 #include "main.h"	
@@ -20,6 +21,10 @@ class Player
 		void attack(Monster &target);
 		
 		void attacktype(Monster &target);
+
+		void attackChoice(Player &C);
 		
 		void display();
   };
+
+  #endif
