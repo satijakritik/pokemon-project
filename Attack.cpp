@@ -1,9 +1,11 @@
 // cpp file for the attack conditions
 
+#include <iostream>
 #include "Attack.h"
 #include "Monster.h"
 #include "Player.h"
 
+/*
 void Player::attackChoice(Player &C)
 {
 	
@@ -22,4 +24,5 @@ void Player::attackChoice(Player &C)
 			break;
 	}
 }
+*/
 

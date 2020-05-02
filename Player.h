@@ -5,13 +5,33 @@
 
 #include "Monster.h" 
 #include "main.h"	
+#include <string>
 
-#include <iostream>
-using namespace std;
+//#include <iostream>
+//using namespace std;
 
 class Player
 {
 	public:
+	int move_number = 0;
+	int size_of_list = 5;
+
+	Player (); //constructor function
+
+	string current_player(int &move_number);
+	/*
+	{
+		if (move_number % 2 == 0)
+		{
+			move_number += 1;
+			return "Player1";
+		}
+		move_number += 1;
+		return "Player2";
+		
+	}
+	*/
+	/*
 		string name;
 		int health;
 		int damage;
@@ -25,6 +45,12 @@ class Player
 		void attackChoice(Player &C);
 		
 		void display();
+	*/
+    string player_name = current_player(move_number);
+	Monster player1_monster_list[5]; 
+	Monster player2_monster_list[5]; 
+	void Player1 (Monster player1_monster_list);
+	void Player2 (Monster player2_monster_list);
   };
 
   #endif
