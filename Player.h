@@ -14,7 +14,7 @@ class Player
 {
 	public:
 	int move_number = 0;
-	int size_of_list = 5;
+	const int size_of_list = 5;
 
 	Player (); //constructor function
 
@@ -43,14 +43,17 @@ class Player
 		void attacktype(Monster &target);
 
 		void attackChoice(Player &C);
-		
-		void display();
-	*/
+	*/	
+
     string player_name = current_player(move_number);
 	Monster player1_monster_list[5]; 
 	Monster player2_monster_list[5]; 
-	void Player1 (Monster player1_monster_list);
-	void Player2 (Monster player2_monster_list);
+
+	void display(Monster player1_monster_list[5], Monster player2_monster_list[5]);
+	void Player1 (Monster player1_monster_list[5]);
+	void Player2 (Monster player2_monster_list[5]);
+
+	void attackChoice(Monster monster);
   };
 
   #endif

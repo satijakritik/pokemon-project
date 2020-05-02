@@ -16,12 +16,12 @@ string Player::current_player(int &move_number)
 		return "Player2";
 }
 
-void Player::Player1 (Monster player1_monster_list)
+void Player::Player1 (Monster player1_monster_list[5])
 {
   ;
 }
 
-void Player::Player2 (Monster player2_monster_list)
+void Player::Player2 (Monster player2_monster_list[5])
 {
   ;
 }
@@ -42,9 +42,11 @@ void Player::attacktype(Monster &target)       // function 2
   }
 
 }
-
-void Player::display()             // function 3
-{
-	cout << name << " health: " << health <<endl;
-}
 */
+
+void Player::display(Monster player1_monster_list[5], Monster player2_monster_list[5]) // function 3: Displays current status of both players and current pokemon
+{
+	cout << "Player1 \n" << player1_monster_list[0].name << " : " << player1_monster_list[0].health << endl;
+  cout << endl;
+  cout << "Player2 \n" << player2_monster_list[0].name << " : " << player2_monster_list[0].health << endl;
+}
