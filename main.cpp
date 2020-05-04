@@ -3,7 +3,6 @@
 #include <iostream>
 #include "Monster.h"
 #include "Player.h"
-#include "Attack.h"
 using namespace std;
 
 int main ()
