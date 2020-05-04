@@ -1,18 +1,43 @@
-// file containg main monster.cpp function
+// file containing main monster.cpp function
 
+#include <iostream>
 #include "Monster.h"
+#include "Player.h"
 
-void Monster::attack(Player &target)
+void Monster::attack(Monster &source, Monster &target, int move_choice_damage)
 {
-	target.health -= damage;
+	Player player = Player();
+	target.health -= move_choice_damage;
 	// health has been detereorated after the attack
   //damage is done to other player's monster
+    string target_player = player.player_name; //stores the name of current player in a string
+
+	if (target.health <= 0)
+	{
+		cout << target.name << " has fainted!" << endl;
+		if (target_player == "Player1")
+		{
+			//Write code to remove 1st monster from player1_monster_list
+			//Also check if list is empty to declare other player as winner
+			;
+		}
+		else if (target_player == "Player2")
+		{
+			//Write code to remove 1st monster from player2_monster_list
+			//Also check if list is empty to declare other player as winner
+			;
+		}
+		
+		
+	}
  
-	cout<<name<<" health: "<<health<<endl; // displays monster name and remaining health
+	cout << target_player << "\n" << name << " health: " << health << endl; // displays monster name and remaining health
 }
 
-Monster::Monster(int newhealth, int newdamage) 
+Monster::Monster(string newName, int newhealth, int newmove1_damage, int newmove2_damage) 
 {
+	name = newName;
 	health = newhealth;
-	damage = newdamage;
+	move1_damage = newmove1_damage;
+	move2_damage = newmove2_damage;
 }

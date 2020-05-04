@@ -1,22 +1,52 @@
 // there are 2 players
 // should be 3 functions in this .cpp file
 
-# include "Player.h";
+#include <iostream>
+#include "Player.h"
+#include "monster.h"
 
-void Character::attack(Monster &target)  //function 1
+string Player::current_player(int &move_number)
+{
+  if (move_number % 2 == 0)
+		{
+			move_number += 1;
+			return "Player1";
+		}
+		move_number += 1;
+		return "Player2";
+}
+
+void Player::Player1 (Monster player1_monster_list[5])
+{
+  ;
+}
+
+void Player::Player2 (Monster player2_monster_list[5])
+{
+  ;
+}
+
+/*
+void Player::attack(Monster &target)  //function 1
 {
   target.health -= damage;
-  cout<<name<<" health: "<<health<<endl;
+  cout << name << " health: " << health << endl;
 }
 
 
-void Character::attacktype()       // function 2
+void Player::attacktype(Monster &target)       // function 2
 {
-  if(health == 0)
-  // not sure what to do for this part
-}
+  if(target.health == 0)
+  {
+    // not sure what to do for this part
+  }
 
-void Player::display()             // function 3
+}
+*/
+
+void Player::display(Monster player1_monster_list[5], Monster player2_monster_list[5]) // function 3: Displays current status of both players and current pokemon
 {
-	cout<<name<<" health: "<<health<<endl;
+	cout << "Player1 \n" << player1_monster_list[0].name << " : " << player1_monster_list[0].health << endl;
+  cout << endl;
+  cout << "Player2 \n" << player2_monster_list[0].name << " : " << player2_monster_list[0].health << endl;
 }
