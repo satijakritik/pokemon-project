@@ -32,8 +32,6 @@ void Player::attackChoice(Monster monster)
 	int choice;
 	int move_choice_damage;
 	Monster target_monster = Monster("X", 1, 1, 1); //create a new temporary object of monster class
-	cout << "Which attack do you want to use? (1/2)" << endl;
-	cin >> choice;
 
   if (player_name == "Player1")
 	{
@@ -43,6 +41,9 @@ void Player::attackChoice(Monster monster)
 	{
 		target_monster = player1_monster_list[0];
 	}
+
+  cout << "Which attack do you want to use? (1/2)" << endl;
+	cin >> choice;
 	
 	switch (choice)
 	{

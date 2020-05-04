@@ -1,7 +1,6 @@
 // header file for monster.cpp
 // includes class
 
-//#include <iostream>
 //#include “main.h”     //to be created later, for main compilation
 #ifndef MONSTER_H
 #define MONSTER_H

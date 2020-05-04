@@ -11,6 +11,7 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage)
 	cout << source.name << " dealt " << move_choice_damage << " to " << target.name << endl;
 	// health has been detereorated after the attack
   //damage is done to other player's monster
+  
     string target_player = player.player_name; //stores the name of current player in a string
 
 	if (target.health <= 0)
@@ -32,7 +33,7 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage)
 		
 	}
  
-	cout << target_player << "\n" << name << " health: " << health << endl; // displays monster name and remaining health
+	//cout << target_player << "\n" << name << " health: " << health << endl; // displays monster name and remaining health
 }
 
 Monster::Monster(string newName, int newhealth, int newmove1_damage, int newmove2_damage) 
