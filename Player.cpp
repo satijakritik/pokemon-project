@@ -8,12 +8,12 @@
 string Player::current_player(int &move_number)
 {
   if (move_number % 2 == 0)
-		{
-			move_number += 1;
-			return "Player1";
-		}
+	{
 		move_number += 1;
-		return "Player2";
+		return "Player1";
+	}
+	move_number += 1;
+	return "Player2";
 }
 
 void Player::Player1 (Monster player1_monster_list[5])
@@ -26,23 +26,42 @@ void Player::Player2 (Monster player2_monster_list[5])
   ;
 }
 
-/*
-void Player::attack(Monster &target)  //function 1
+void Player::attackChoice(Monster monster)
 {
-  target.health -= damage;
-  cout << name << " health: " << health << endl;
+	display(player1_monster_list, player2_monster_list); // display the players and current pokemon
+	int choice;
+	int move_choice_damage;
+	Monster target_monster = Monster("X", 1, 1, 1); //create a new temporary object of monster class
+	cout << "Which attack do you want to use? (1/2)" << endl;
+	cin >> choice;
+
+  if (player_name == "Player1")
+	{
+		target_monster = player2_monster_list[0];
+	}
+  else if (player_name == "Player2")
+	{
+		target_monster = player1_monster_list[0];
+	}
+	
+	switch (choice)
+	{
+	case 1:
+		move_choice_damage = monster.move1_damage;
+		monster.attack(monster, target_monster, move_choice_damage);
+		break;
+
+  case 2:
+		move_choice_damage = monster.move2_damage;
+		monster.attack(monster, target_monster, move_choice_damage);
+		break;
+	
+	default:
+	  cout << "Please enter valid input" << endl;
+	  Player::attackChoice(monster);
+	  break;
+	}
 }
-
-
-void Player::attacktype(Monster &target)       // function 2
-{
-  if(target.health == 0)
-  {
-    // not sure what to do for this part
-  }
-
-}
-*/
 
 void Player::display(Monster player1_monster_list[5], Monster player2_monster_list[5]) // function 3: Displays current status of both players and current pokemon
 {

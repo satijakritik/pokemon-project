@@ -4,10 +4,11 @@
 #include "Monster.h"
 #include "Player.h"
 
-void Monster::attack(Monster &source, Monster &target, int move_choice_damage)
+void Monster::attack(Monster source, Monster &target, int move_choice_damage)
 {
 	Player player = Player();
 	target.health -= move_choice_damage;
+	cout << source.name << " dealt " << move_choice_damage << " to " << target.name << endl;
 	// health has been detereorated after the attack
   //damage is done to other player's monster
     string target_player = player.player_name; //stores the name of current player in a string
