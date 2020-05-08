@@ -1,8 +1,8 @@
 // file containing main monster.cpp function
 
 #include <iostream>
-#include "monster.h"
-#include "player.h"
+#include "Monster.h"
+#include "Player.h"
 
 void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool &game_over)
 {
