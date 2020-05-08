@@ -25,7 +25,7 @@ int main ()
     //end of menu
 
     //Game has started
-    Player player = Player();
+    Player player;
 
     player.Player1(player.player1_monster_list); //create player 1 monster list
     player.Player2(player.player2_monster_list); //create player 2 monster list

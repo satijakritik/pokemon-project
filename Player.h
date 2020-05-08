@@ -3,7 +3,8 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "monster.h" 	
+#include "monster.h" 
+#include <string>	
 #include <vector>
 
 class Player
@@ -12,7 +13,10 @@ class Player
 	int move_number = 0;
 	const int size_of_list = 5;
 
-	Player (); //constructor function
+	Player () //constructor function
+	{
+        Player player;
+	}
 
     string player_name = current_player(move_number);
 
