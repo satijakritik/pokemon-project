@@ -3,7 +3,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "Monster.h" 
+#include "monster.h" 
 #include "main.h"	
 #include <vector>
 
