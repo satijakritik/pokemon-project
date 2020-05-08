@@ -1,7 +1,7 @@
 // main file to compile the rest of the code
 
 #include <iostream>
-#include "Monster.h"
+#include "monster.h"
 #include "Player.h"
 #include "menu.h"
 
