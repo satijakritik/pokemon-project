@@ -4,7 +4,7 @@
 #include "monster.h"
 #include "Player.h"
 
-void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool game_over)
+void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool game_over, vector<Monster> &player1_monster_list, vector<Monster> &player2_monster_list)
 {
 	Player player = Player();
 	target.health -= move_choice_damage;
@@ -21,8 +21,8 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage, bo
 		{
 			//Write code to remove the monster from player1_monster_list
 			//Also check if list is empty to declare other player as winner
-			player.player1_monster_list.pop_back();
-			if (player.player1_monster_list.size() == 0)
+			player1_monster_list.pop_back();
+			if (player1_monster_list.size() == 0)
 			{
 				cout << "The winner is Player 2 !" << endl;
 				game_over = true;
@@ -33,8 +33,8 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage, bo
 		{
 			//Write code to remove the monster from player2_monster_list
 			//Also check if list is empty to declare other player as winner
-			player.player2_monster_list.pop_back();
-			if (player.player2_monster_list.size() == 0)
+			player2_monster_list.pop_back();
+			if (player2_monster_list.size() == 0)
 			{
 				cout << "The winner is Player 1 !" << endl;
 				game_over = true;
