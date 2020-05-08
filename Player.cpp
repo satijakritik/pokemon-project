@@ -5,8 +5,8 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
-#include "player.h"
-#include "monster.h"
+#include "Player.h"
+#include "Monster.h"
 
 string Player::current_player(int &move_number) 
 {
