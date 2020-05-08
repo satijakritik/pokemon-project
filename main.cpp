@@ -2,6 +2,8 @@
 
 #include <iostream>
 #include <vector>
+#include <cstdlib>
+#include <ctime>
 #include "monster.h"
 #include "Player.h"
 #include "menu.h"
@@ -28,9 +30,6 @@ int main ()
     //Game has started
     Player player;
 
-    //player.Player1(player.player1_monster_list); //create player 1 monster list
-    //player.Player2(player.player2_monster_list); //create player 2 monster list
-
     bool game_over = false;
     int move_number = 0;
 
@@ -39,13 +38,21 @@ int main ()
     vector<Monster> player1_monster_list;
     vector<Monster> player2_monster_list;
 
-    player1_monster_list.push_back(complete_monster_list[0]);
-    player1_monster_list.push_back(complete_monster_list[1]);
-    player1_monster_list.push_back(complete_monster_list[2]);
+    int num_of_pokemon = 3;
+    int random_number;
 
-    player2_monster_list.push_back(complete_monster_list[3]);
-    player2_monster_list.push_back(complete_monster_list[4]);
-    player2_monster_list.push_back(complete_monster_list[5]);
+    srand(time(NULL));
+
+    for (int i = 0; i < num_of_pokemon; i++)
+    {
+        random_number = rand() % 10;
+        player1_monster_list.push_back(complete_monster_list[random_number]);
+    }
+    for (int i = 0; i < num_of_pokemon; i++)
+    {
+        random_number = rand() % 10;
+        player2_monster_list.push_back(complete_monster_list[random_number]);
+    }
 
     while (game_over != true)
     {

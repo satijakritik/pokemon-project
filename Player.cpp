@@ -60,8 +60,9 @@ void Player::attackChoice(Monster monster, bool game_over, vector<Monster> &play
 		target_monster = player1_monster_list.back();
 	}
 
-  cout << "Which attack do you want to use? (1/2)" << endl; //asks user for the move to be used
+  cout << "Which attack do you want to use " << current_player << " ? (1/2)" << endl; //asks user for the move to be used
 	cin >> choice;
+	system ("clear");
 	
 	switch (choice)
 	{
