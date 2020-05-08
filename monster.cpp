@@ -6,6 +6,7 @@
 
 void Monster::attack(Monster source, Monster &target, int move_choice_damage)
 {
+	bool game_over = false;
 	Player player = Player();
 	target.health -= move_choice_damage;
 	cout << source.name << " dealt " << move_choice_damage << " to " << target.name << endl;
@@ -19,15 +20,27 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage)
 		cout << target.name << " has fainted!" << endl;
 		if (target_player == "Player1")
 		{
-			//Write code to remove 1st monster from player1_monster_list
+			//Write code to remove the monster from player1_monster_list
 			//Also check if list is empty to declare other player as winner
-			;
+			player.player1_monster_list.pop_back();
+			if (player.player1_monster_list.size() == 0)
+			{
+				cout << "The winner is Player 2 !" << endl;
+				game_over = true;
+			}
+			
 		}
 		else if (target_player == "Player2")
 		{
-			//Write code to remove 1st monster from player2_monster_list
+			//Write code to remove the monster from player2_monster_list
 			//Also check if list is empty to declare other player as winner
-			;
+			player.player2_monster_list.pop_back();
+			if (player.player2_monster_list.size() == 0)
+			{
+				cout << "The winner is Player 1 !" << endl;
+				game_over = true;
+			}
+			
 		}
 		
 		

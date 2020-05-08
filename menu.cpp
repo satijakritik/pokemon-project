@@ -5,7 +5,7 @@
 #include "menu.h"
 using namespace std;
 
-int main() 
+void menu() 
 {
   for (int i = 0; i < 70; i++)
   {
@@ -141,5 +141,4 @@ int main()
   cout<<endl;
   // finishes printing final dash line, menu complete
 
-  return 0;
 }
