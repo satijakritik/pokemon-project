@@ -3,10 +3,10 @@
 
 #include <iostream>
 #include <vector>
-#include "Player.h"
-#include "monster.h"
 #include <cstdlib>
 #include <ctime>
+#include "player.h"
+#include "monster.h"
 
 string Player::current_player(int &move_number) 
 {
