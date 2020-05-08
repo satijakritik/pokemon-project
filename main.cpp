@@ -1,8 +1,8 @@
 // main file to compile the rest of the code
 
 #include <iostream>
-#include "monster.h"
-#include "player.h"
+#include "Monster.h"
+#include "Player.h"
 #include "menu.h"
 
 using namespace std;
