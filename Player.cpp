@@ -39,7 +39,7 @@ void Player::Player2 (vector<Monster> player2_monster_list)
   }
 }
 
-void Player::attackChoice(Monster monster)
+void Player::attackChoice(Monster monster, bool &game_over)
 {
 	display(player1_monster_list, player2_monster_list); // display the players and current pokemon
 	int choice;
@@ -62,17 +62,17 @@ void Player::attackChoice(Monster monster)
 	{
 	case 1:
 		move_choice_damage = monster.move1_damage;
-		monster.attack(monster, target_monster, move_choice_damage);
+		monster.attack(monster, target_monster, move_choice_damage, game_over);
 		break;
 
   case 2:
 		move_choice_damage = monster.move2_damage;
-		monster.attack(monster, target_monster, move_choice_damage);
+		monster.attack(monster, target_monster, move_choice_damage, game_over);
 		break;
 	
 	default:
 	  cout << "Please enter valid input" << endl;
-	  Player::attackChoice(monster);
+	  Player::attackChoice(monster, game_over);
 	  break;
 	}
 }

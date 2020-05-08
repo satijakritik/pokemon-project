@@ -4,7 +4,7 @@
 #include "Monster.h"
 #include "Player.h"
 
-void Monster::attack(Monster source, Monster &target, int move_choice_damage)
+void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool &game_over)
 {
 	bool game_over = false;
 	Player player = Player();
