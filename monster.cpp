@@ -1,12 +1,11 @@
 // file containing main monster.cpp function
 
 #include <iostream>
-#include "Monster.h"
+#include "monster.h"
 #include "Player.h"
 
-void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool &game_over)
+void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool game_over)
 {
-	bool game_over = false;
 	Player player = Player();
 	target.health -= move_choice_damage;
 	cout << source.name << " dealt " << move_choice_damage << " to " << target.name << endl;

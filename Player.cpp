@@ -6,7 +6,7 @@
 #include <cstdlib>
 #include <ctime>
 #include "Player.h"
-#include "Monster.h"
+#include "monster.h"
 
 string Player::current_player(int &move_number) 
 {
@@ -39,7 +39,7 @@ void Player::Player2 (vector<Monster> player2_monster_list)
   }
 }
 
-void Player::attackChoice(Monster monster, bool &game_over)
+void Player::attackChoice(Monster monster, bool game_over)
 {
 	display(player1_monster_list, player2_monster_list); // display the players and current pokemon
 	int choice;

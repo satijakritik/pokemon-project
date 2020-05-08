@@ -3,7 +3,7 @@
 #ifndef PLAYER_H
 #define PLAYER_H
 
-#include "Monster.h" 
+#include "monster.h" 
 #include "main.h"	
 #include <vector>
 
@@ -35,7 +35,7 @@ class Player
 	void Player1 (vector<Monster> player1_monster_list);//  Haven't made
 	void Player2 (vector<Monster> player2_monster_list);//  these functions yet
 
-	void attackChoice(Monster monster, bool &game_over);
+	void attackChoice(Monster monster, bool game_over);
 	//Function: Checks which move to use for the monster
 	//Input: current monster
 	//Output: No return, but executes the attack

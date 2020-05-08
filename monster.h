@@ -14,7 +14,7 @@ class Monster
     int move1_damage;
     int move2_damage;
     Monster (string newName, int newhealth, int newmove1damage, int newmove2damage); // constructor function
-    void attack (Monster Monster1, Monster &Monster2, int move_choice, bool &game_over);
+    void attack (Monster Monster1, Monster &Monster2, int move_choice, bool game_over);
 
 };
 
