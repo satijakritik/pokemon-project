@@ -7,6 +7,7 @@ using namespace std;
 
 void menu() 
 {
+  system ("clear");
   for (int i = 0; i < 70; i++)
   {
     cout << "-";
