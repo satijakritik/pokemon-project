@@ -4,15 +4,38 @@
 #include "monster.h"
 #include "Player.h"
 
-void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool game_over, vector<Monster> &player1_monster_list, vector<Monster> &player2_monster_list)
+void Monster::attack(Monster source, Monster &target, int move_choice_damage, bool game_over, vector<Monster> &player1_monster_list, vector<Monster> &player2_monster_list, string current_player)
 {
 	Player player = Player();
+	string other_player;
+	if (current_player == "Player1")
+	{
+		other_player = "Player2";
+		player2_monster_list.back().health -= move_choice_damage;
+		if (player2_monster_list.back().health < 0)
+		{
+			player2_monster_list.back().health = 0;
+		}
+		
+	}
+	else
+	{
+		other_player = "Player1";
+		player1_monster_list.back().health -= move_choice_damage;
+		if (player1_monster_list.back().health < 0)
+		{
+			player1_monster_list.back().health = 0;
+		}
+	}
+	
+	
+	
 	target.health -= move_choice_damage;
-	cout << source.name << " dealt " << move_choice_damage << " to " << target.name << endl;
+	cout << source.name << " dealt " << move_choice_damage << " damage" << " to " << target.name << endl;
 	// health has been detereorated after the attack
   //damage is done to other player's monster
   
-    string target_player = player.player_name; //stores the name of current player in a string
+    string target_player = other_player; //stores the name of current player in a string
 
 	if (target.health <= 0)
 	{
@@ -26,6 +49,7 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage, bo
 			{
 				cout << "The winner is Player 2 !" << endl;
 				game_over = true;
+				exit(1);
 			}
 			
 		}
@@ -38,6 +62,7 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage, bo
 			{
 				cout << "The winner is Player 1 !" << endl;
 				game_over = true;
+				exit(1);
 			}
 			
 		}
