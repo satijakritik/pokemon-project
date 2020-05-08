@@ -67,12 +67,12 @@ void Player::attackChoice(Monster monster, bool game_over, vector<Monster> &play
 	{
 	case 1:
 		move_choice_damage = monster.move1_damage;
-		monster.attack(monster, target_monster, move_choice_damage, game_over, player1_monster_list, player2_monster_list);
+		monster.attack(monster, target_monster, move_choice_damage, game_over, player1_monster_list, player2_monster_list, current_player);
 		break;
 
     case 2:
 		move_choice_damage = monster.move2_damage;
-		monster.attack(monster, target_monster, move_choice_damage, game_over, player1_monster_list, player2_monster_list);
+		monster.attack(monster, target_monster, move_choice_damage, game_over, player1_monster_list, player2_monster_list, current_player);
 		break;
 	
 	default:
