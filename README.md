@@ -12,37 +12,33 @@
 
 Pokémon Challenges is a two player turn based game inspired by the popular Pokémon videogames. In this game, each player is randomly assigned a pre-decided number of pokémons from an existing database. They carry out attacks on each other, aiming to lower the health of the other pokémon to zero. When its health reaches zero, the pokémon faints. If the player has any more pokémons left, they can be used until their health also depletes to zero. The first player to finish all pokémons loses the game.
 
-## Features of the Game
-
-The game will include the following features :-
-
-
-
 
 ## Functional Components of the game :-
 
-   1. A main menu that displays the rules of theh game and available pokemons.
+   1. A main menu displays the rules of theh game and available pokemons.
 
-   2. Random selection of pokémons for both the players that is stored in an array.
+   2. Random selection of pokémons takes place for both the players 
    
-   3. A file to store the input that the user enters. This input will be the number of pokémons that both players will recieve for every battle.
+   3. Dynamic memory management is done by storing  Pokemons are stored in a vector.
+   
+   4. A file stores the input that the user enters. This input will be the number of pokémons that both players will recieve for every battle, and may be modified during runtime.
     
-   4. The pokémons assigned in the game settings will be stored in a file and loaded using file I/O.
+   5. The pokémons assigned in the game settings will be stored in a file and loaded using file I/O.
    
    5. The code is distributed into multiple files, separately for functions that will have their own cpp and header files (.h).
    
    6. A Makefile is present in the repository to compile all these files.
    
    7. Each file includes descriptive comments explaining the functions of the code.
+   
+## Step by Step Instructions:-
 
+   1. Step 1: Clone GitHub url in the terminal enter login details.
 
-
-
-
-
-## Flow of the Game
-
-![Second Draft of gameflow](https://raw.githubusercontent.com/satijakritik/images/master/pokémon_second_draft_flowchart.png?token=ANKJCU6T3YFFLYFM5C6HK2C6TGJX6)
-<br>
-<br>
-This flowchart covers the different scenarios that may arise during gameplay. It is subject to change during the development of the game.
+   2. Step 2: Enter the 'make main' command.
+   
+   3. Step 3: All the files will compile and if any errors are present, they will be spotted.
+   
+   4. Step 4: After successful compilation, enter './main' command.
+   
+   5. Step 5: The welcome page should open and the game begins.
