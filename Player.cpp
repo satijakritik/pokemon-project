@@ -18,38 +18,18 @@ string Player::current_player(int &move_number)
 	move_number += 1;
 	return "Player2";
 }
-/*
-void Player::Player1 (vector<Monster> &player1_monster_list)
-{
-  const int num_of_pokemon = 3;
-  int random_number;
-  srand(time(NULL));
-  for (int i = 0; i < num_of_pokemon; i++)
-  {
-	  random_number = rand() % 10;
-	  player1_monster_list.push_back(complete_monster_list[random_number]);
-  }
-}
-
-void Player::Player2 (vector<Monster> &player2_monster_list)
-{
-  const int num_of_pokemon = 3;
-  int random_number;
-  srand(time(NULL));
-  for (int i = 0; i < num_of_pokemon; i++)
-  {
-	  random_number = rand() % 10;
-	  player2_monster_list.push_back(complete_monster_list[random_number]);
-  }
-}
-*/
+//function that identifies which player has the turn
+// to move depending on move number
 
 void Player::attackChoice(Monster monster, bool game_over, vector<Monster> &player1_monster_list, vector<Monster> &player2_monster_list, string current_player)
 {
-	display(player1_monster_list, player2_monster_list); // display the players and current pokemon
+	display(player1_monster_list, player2_monster_list); 
+	// display the players and current pokemon
+	
 	int choice;
 	int move_choice_damage;
-	Monster target_monster = Monster("X", 1, 1, 1); //create a new temporary object of monster class
+	Monster target_monster = Monster("X", 1, 1, 1); 
+	//create a new temporary object of monster class
 
   if (current_player == "Player1")
 	{
@@ -81,6 +61,9 @@ void Player::attackChoice(Monster monster, bool game_over, vector<Monster> &play
 	  Player::attackChoice(monster, game_over, player1_monster_list, player2_monster_list, current_player);
 	  break;
 	}
+	// assigns move based on players choice
+	// asks for input again in case invalid choice entered
+	
 }
 
 void Player::display(vector<Monster> player1_monster_list, vector<Monster> player2_monster_list) //Displays current status of both players and current pokemon
