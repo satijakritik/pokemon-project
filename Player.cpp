@@ -68,7 +68,7 @@ void Player::attackChoice(Monster monster, bool game_over, vector<Monster> &play
 
 void Player::display(vector<Monster> player1_monster_list, vector<Monster> player2_monster_list) //Displays current status of both players and current pokemon
 {
-  cout << "Player1 \n" << player1_monster_list.back().name << " : " << player1_monster_list.back().health << endl;
+  cout << "Player1 (number of pokemon left: " << player1_monster_list.size() << ") \n" << player1_monster_list.back().name << " : " << player1_monster_list.back().health << endl;
   cout << endl;
-  cout << "Player2 \n" << player2_monster_list.back().name << " : " << player2_monster_list.back().health << endl;
+  cout << "Player2 (number of pokemon left: " << player2_monster_list.size() << ") \n" << player2_monster_list.back().name << " : " << player2_monster_list.back().health << endl;
 }
