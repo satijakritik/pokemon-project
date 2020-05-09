@@ -33,7 +33,7 @@ Pok√©mon Challenges is a two player turn based game inspired by the popular Pok√
    
 ## Step by Step Instructions:-
 
-   1. Step 1: Clone GitHub url in the terminal enter login details.
+   1. Step 1: Clone GitHub url in the terminal using 'git clone' and enter login details of user.
 
    2. Step 2: Enter the 'make main' command.
    
