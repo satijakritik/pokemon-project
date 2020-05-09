@@ -6,6 +6,6 @@
 void menu();
 //Function: calls the menu function
 //Input: No input to start menu, but asks for input to display rules
-//Output: No output, but prints the menu
+//purpose is to display the menu
 
 #endif
