@@ -54,7 +54,7 @@ int main ()
                 exit(1);
             }
             cout << "Enter the number of pokemon for each player (max. 5) " << endl;
-            cout << " (Current setting: " << num_of_pokemon << ") ";
+            cout << " (Current setting: " << num_of_pokemon << ") " << endl;
             cin >> num_of_pokemon;
             fout << num_of_pokemon;
 
