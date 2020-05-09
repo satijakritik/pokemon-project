@@ -3,7 +3,11 @@
 #include <stdlib.h>
 
 #include "menu.h"
+
 using namespace std;
+
+// menu() function meant for dispaying purposes only
+// familiarises user with game structure
 
 void menu() 
 {
@@ -13,6 +17,8 @@ void menu()
     cout << "-";
   }
   cout<<endl;
+  
+  //simple design to make it more user friendly
   
   cout<< "  _   _   _   _   _   _   _     _   _     _   _   _   _   _   _   _   _" <<endl ;
 
@@ -54,6 +60,7 @@ void menu()
   // finishes printing the rules design 
   
   // displays list of rules in the game  
+  
   cout<<endl;
   cout<< " (1)  Pokemons will be randomly assigned to both players.\n";
   cout<<endl;
@@ -91,8 +98,10 @@ void menu()
 
   cout<<" / \\ / \\ / \\ / \\ / \\   / \\ / \\   / \\ / \\ / \\ / \\ / \\ / \\ / \\  ";
   cout<<endl;
+  
   cout<< "( T | y | p | e | s ) ( o | f ) ( P | o | k | e | m | o | n )";
   cout<<endl;
+  
   cout<<" \\_/ \\_/ \\_/ \\_/ \\_/   \\_/ \\_/   \\_/ \\_/ \\_/ \\_/ \\_/ \\_/ \\_/ \n";
   cout<<endl;
 
@@ -104,42 +113,54 @@ void menu()
   // prints decorative title on new screen
   
   // prints types of pokemons in the generator
+  
   cout<<endl;
   cout<<"(1) ARCEUS: The God of the Pokemon universe. \n";
   cout<<setw(16)<<"DAMAGE: 30 \n";
   cout<<endl;
+  
   cout<<"(2) DIALGA: The lord of Time. Very Powerful. \n";
   cout<<setw(16)<<"DAMAGE: 25 \n";
   cout<<endl;
+  
   cout<<"(3) PALKIA: The lord of Space. Very Powerful. \n";
   cout<<setw(16)<<"DAMAGE: 25 \n";
   cout<<endl;
+  
   cout<<"(4) MEWTWO: Considered the strongest Pokemon. \n";
   cout<<setw(16)<<"DAMAGE: 25 \n";
   cout<<endl;
+  
   cout<<"(5) BLAZIKEN: Fire type Pokemon. Deadly. \n";
   cout<<setw(16)<<"DAMAGE: 20 \n";
   cout<<endl;
+  
   cout<<"(6) LUXRAY: Electric type Pokemon. Dangerous. \n";
   cout<<setw(16)<<"DAMAGE: 20 \n";
   cout<<endl;
+  
   cout<<"(7) LUCARIO: Fighting and steel Pokemon. Controls auras. \n";
   cout<<setw(16)<<"DAMAGE: 20 \n";
   cout<<endl;
+  
   cout<<"(8) GIRATINA: Satan of Pokemon universe. Very evil. \n";  
   cout<<setw(16)<<"DAMAGE: 30 \n";
   cout<<endl;
+  
   cout<<"(9) LUGIA: The diving Pokemon. Causes storms. \n";
   cout<<setw(16)<<"DAMAGE: 25 \n";
   cout<<endl;
+  
   cout<<"(10)SNOM: Ice type Pokemon. Very friendly. \n";
-  cout<<setw(16)<<"DAMAGE: 15 \n"; 
+  cout<<setw(16)<<"DAMAGE: 15"; 
+  cout<<endl;
 
   for (int i = 0; i < 70; i++)
   {
     cout << "-";
   }
   cout<<endl;
+  
   // finishes printing final dash line, menu complete
 
 }
