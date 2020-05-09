@@ -19,7 +19,9 @@ main.o: main.cpp menu.h monster.h Player.h
 main: main.o menu.o Player.o monster.o 
 	g++ -pedantic-errors -std=c++11 menu.o Player.o monster.o main.o -o main
 
+# delete all the object files and executables
 clean:
 	rm *.o main
-	
+
+#specifying that clean is a phony target
 .PHONY: clean
