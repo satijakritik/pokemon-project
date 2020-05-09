@@ -1,8 +1,10 @@
 // file containing main monster.cpp function
 
 #include <iostream>
+#include <vector>
 #include "monster.h"
 #include "Player.h"
+
 
 //import Player.h
 //as file makes use of the Player class
