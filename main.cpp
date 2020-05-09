@@ -8,6 +8,7 @@
 #include "monster.h"
 #include "Player.h"
 #include "menu.h"
+// importing all header files needed for compilation
 
 using namespace std;
 
@@ -72,6 +73,8 @@ int main ()
     Player player;
 
     bool game_over = false;
+    // game_over is a checker in place to keep a track of when a player wins
+    
     int move_number = 0;
 
     fin.open("save.txt"); //load the file
@@ -103,7 +106,9 @@ int main ()
         random_number = rand() % 10;
         player2_monster_list.push_back(complete_monster_list[random_number]);
     }
-
+    
+    
+    //while the game is still running and there is no winner;
     while (game_over != true)
     {
         string current_player = player.current_player(move_number);
