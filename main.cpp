@@ -14,7 +14,7 @@ using namespace std;
 int main ()
 {
     //menu started
-    int choice;
+    char choice;
     int num_of_pokemon;
     ifstream fin;
     ofstream fout;
@@ -22,17 +22,18 @@ int main ()
     
     cout << "(1) Start the game" << endl;
     cout << "(2) Game settings" << endl;
+    cout << "(3) Quit game" << endl;
 
     cin >> choice;
-    while (choice != 1)
+    while (choice != '1')
     {
         switch (choice)
         {
-        case 1:
+        case '1':
             system ("clear");
             break;
 
-        case 2:
+        case '2':
             system ("clear");
             fout.open("save.txt"); //save the file
             if (fout.fail())
@@ -49,7 +50,12 @@ int main ()
             menu();
             cout << "(1) Start the game" << endl;
             cout << "(2) Game settings" << endl;
+            cout << "(3) Quit game" << endl;
             cin >> choice;
+            break;
+
+        case '3':
+            exit(1);
             break;
     
         default:
