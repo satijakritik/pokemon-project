@@ -19,6 +19,17 @@ int main ()
     int num_of_pokemon;
     ifstream fin;
     ofstream fout;
+
+    fin.open("save.txt"); //load the file
+    if (fin.fail())
+    {
+        cout << "Error in file opening" << endl;
+        exit(1);
+    }
+    fin >> num_of_pokemon;
+
+    fin.close();
+
     menu();
     
     cout << "(1) Start the game" << endl;
@@ -43,6 +54,7 @@ int main ()
                 exit(1);
             }
             cout << "Enter the number of pokemon for each player (max. 5) " << endl;
+            cout << " (Current setting: " << num_of_pokemon << ") ";
             cin >> num_of_pokemon;
             fout << num_of_pokemon;
 
