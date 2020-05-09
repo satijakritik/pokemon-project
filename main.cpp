@@ -4,6 +4,7 @@
 #include <vector>
 #include <cstdlib>
 #include <ctime>
+#include <fstream>
 #include "monster.h"
 #include "Player.h"
 #include "menu.h"
@@ -14,16 +15,50 @@ int main ()
 {
     //menu started
     int choice;
+    int num_of_pokemon;
+    ifstream fin;
+    ofstream fout;
     menu();
     
-    cout << "Press 1 to start the game" << endl;
+    cout << "(1) Start the game" << endl;
+    cout << "(2) Game settings" << endl;
 
     cin >> choice;
     while (choice != 1)
     {
-        cout << "Invalid Input. Try again" << endl;
-        cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            system ("clear");
+            break;
+
+        case 2:
+            system ("clear");
+            fout.open("save.txt"); //save the file
+            if (fout.fail())
+            {
+                cout << "Error in file opening" << endl;
+                exit(1);
+            }
+            cout << "Enter the number of pokemon for each player (max. 5) " << endl;
+            cin >> num_of_pokemon;
+            fout << num_of_pokemon;
+
+            fout.close();
+
+            menu();
+            cout << "(1) Start the game" << endl;
+            cout << "(2) Game settings" << endl;
+            cin >> choice;
+            break;
+    
+        default:
+            cout << "Please enter valid input" << endl;
+            cin >> choice;
+            break;
+        }
     }
+    
     system ("clear");
     //end of menu
 
@@ -33,15 +68,24 @@ int main ()
     bool game_over = false;
     int move_number = 0;
 
+    fin.open("save.txt"); //load the file
+    if (fin.fail())
+    {
+        cout << "Error in file opening" << endl;
+        exit(1);
+    }
+    fin >> num_of_pokemon;
+
+    fin.close();
+
     Monster complete_monster_list[10] = {Monster("Arceus", 100, 30, 30), Monster("Dialga", 100, 25, 25), Monster("Palkia", 100, 25, 25), Monster("Mewtwo", 100, 25, 25), Monster("Blaziken", 100, 20, 20), Monster("Luxray", 100, 20, 20), Monster("Lucario", 100, 20, 20), Monster("Giratina", 100, 30, 30), Monster("Lugia", 100, 25, 25), Monster("Snom", 100, 15, 15)};
 
     vector<Monster> player1_monster_list;
     vector<Monster> player2_monster_list;
 
-    int num_of_pokemon = 3;
     int random_number;
 
-    srand(time(NULL));
+    srand(time(NULL)); //randomize the pokemon given to each player
 
     for (int i = 0; i < num_of_pokemon; i++)
     {
