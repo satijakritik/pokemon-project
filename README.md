@@ -15,25 +15,25 @@ Pokémon Challenges is a two player turn based game inspired by the popular Pok�
 
 ## Functional Components of the game :-
 
-   1. A main menu displays the rules of theh game and available pokemons.
+   1. A main menu displays the rules of the game and available pokémons.
 
    2. Random selection of pokémons takes place for both the players 
    
-   3. Dynamic memory management is done by storing  Pokemons are stored in a vector.
+   3. Dynamic memory management is done by storing pokémons in a vector.
    
    4. A file stores the input that the user enters. This input will be the number of pokémons that both players will recieve for every battle, and may be modified during runtime.
     
    5. The pokémons assigned in the game settings will be stored in a file and loaded using file I/O.
    
-   5. The code is distributed into multiple files, separately for functions that will have their own cpp and header files (.h).
+   6. The code is distributed into multiple files, separately for functions that will have their own cpp and header files (.h).
    
-   6. A Makefile is present in the repository to compile all these files.
+   7. A Makefile is present in the repository to compile all these files.
    
-   7. Each file includes descriptive comments explaining the functions of the code.
+   8. Each file includes descriptive comments explaining the functions of the code.
    
 ## Step by Step Instructions:-
 
-   1. Step 1: Clone GitHub url in the terminal using `git clone` and enter login details.
+   1. Step 1: Clone the GitHub url in the terminal using `git clone` and enter login details.
 
    2. Step 2: Enter the `make main` command.
    
@@ -43,4 +43,4 @@ Pokémon Challenges is a two player turn based game inspired by the popular Pok�
    
    5. Step 5: The welcome page should open and the game begins.
    
-   6. At the end of the game, after exiting, the user may enter `make clean` to clear file clutter. This is not a necessity.
+   6. Step 6: At the end of the game, after exiting, the user may enter `make clean` to clear file clutter. This is not a necessity.
