@@ -92,6 +92,7 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage, bo
 		// depending on target player, checks for empty list
 		
 		}
+		/*
 		
 		if (target_player == "Player1")
 		{
@@ -122,6 +123,7 @@ void Monster::attack(Monster source, Monster &target, int move_choice_damage, bo
 			}
 			
 		}
+		*/
 		
 		
 	}
