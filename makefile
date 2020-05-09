@@ -6,7 +6,7 @@ menu.o: menu.cpp menu.h
 
 # object code file for Player
 Player.o: Player.cpp Player.h monster.h
-	g++ -pedantic-errors -std=c++11 -c player.cpp
+	g++ -pedantic-errors -std=c++11 -c Player.cpp
     
 # object code file for monster
 monster.o: monster.cpp monster.h Player.h
